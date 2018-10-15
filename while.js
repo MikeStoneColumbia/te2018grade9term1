@@ -8,6 +8,9 @@ function countdown() {
 
 }
 
+// Test below
+//countdown();
+
 /**** Problem 2 ****
 Write a function that asks the user to enter a secret password. Until the user
 enters the correct password, the program will keep asking for all eternity!
@@ -17,6 +20,9 @@ congratulatory message.
 function getPassword() {
 
 }
+
+// Test below
+//getPassword();
 
 /**** Problem 3 ****
 Enhance your function above to only allow the user to try entering the correct
@@ -28,11 +34,17 @@ function getPasswordEnhanced() {
 
 }
 
+// Test below
+//getPasswordEnhanced();
+
 /**** Problem 4 ****
 As a final enhancement, make it so when the user enters the wrong password, the
-program tells them that they are wrong, along with how many attempts they've
-made so far.
+program tells them that they are wrong, along with how many attempts they
+have left.
 */
 function getPasswordFinal() {
 
 }
+
+// Test below
+//getPasswordFinal() ;
