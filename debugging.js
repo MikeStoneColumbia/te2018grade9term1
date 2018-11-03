@@ -23,7 +23,7 @@ if(money > 20 && money <= 50) {
 console.log(money);
 
 // Program #3: "And what else?"
-
+//ZA Wardo
 let num1 = READLINE.question("Enter num1: ");
 let num2 = READLINE.question("Enter num2: ");
 let num3 = READLINE.question("Enter num3: ");
