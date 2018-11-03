@@ -2,9 +2,22 @@
 // You cannot see an R-rated movie unless you are at least 18, or you are with
 // an adult. Write code that prints whether or not someone can see an
 // R-rated movie.
+
+let READLINE = require("readline-sync");
+
 console.log("*** Problem 1: R-rated ***");
-let age; // assign a number
-let withAdult; // assign a boolean
+let age= READLINE.question("Enter your age "); // assign a number
+let withAdult = true; // assign a boolean
+
+if (age >= 18 || withAdult ){
+
+console.log("Watch movie")
+
+}else{
+
+console.log("you need an adult.")
+
+}
 
 
 // **** Problem 2: Umbrella ****
@@ -14,8 +27,9 @@ let withAdult; // assign a boolean
 // as well. Write code that prints if someone should bring an umbrella
 // with them.
 console.log("*** Problem 2: Umbrella ***");
-let raining; // assign a boolean
-let thunderstorming; // assign a boolean
+let raining = READLINE.question("Is it raining?: "); // assign a boolean
+let thunderstorming = READLINE.question("Is is thunderstorming"); // assign a boolean
+
 
 
 // **** Problem 3: Monkey Trouble ****
