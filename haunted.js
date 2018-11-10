@@ -8,6 +8,7 @@ let player = {
   courage: 0,
   intellect: 0,
   strength: 0,
+  defense :0,
   charm: 0,
   haki : 0,
   weapon: "fists",
@@ -38,7 +39,7 @@ if(enterHouse == "y" || enterHouse == "yes") {
 
     if(classDecision.toLowerCase == "yes"){
 
-      console.log(`${player.name} tocuhes the stone, a flood of energy enters your body! You feel like you have awakened!`);
+      console.log(`${player.name} touches the stone, a flood of energy enters your body! You feel like you have awakened!`);
       player.abilities[0] = "Fireball"
       player.intellect += 50;
       consle.log(`${player.name} has transcended to a mage! You learned Fireball! `${player.name}'s intellect rose by 50!');
@@ -48,8 +49,37 @@ if(enterHouse == "y" || enterHouse == "yes") {
 
   } else if(crossroad == "Left"){
 
-    
-    
+    console.log(`${player.named} has chosen to go down the middle path.`);
+    console.log("There is an altar with a shiny stone with a staff engraved in it.");
+    console.log("The energy of the stone is radiating. It's almost as if it wants to become a part of you. Touch the stone?");
+    let classDecision = READLINE.question("Yes? or No?");
+
+    if(classDecision.toLowerCase == "yes"){
+
+      console.log(`${player.name} touches the stone, a flood of energy enters your body! You feel like you have awakened!`);
+      player.abilities[0] = "Armoring Punch"
+      player.haki += 50;
+      consle.log(`${player.name} has transcended to a Fighter! You learned Armoring Punch! `${player.name}'s haki rose by 50!');
+
+    }
+
+
+  } else {
+
+    console.log(`${player.name} has chosen to go down the Right path.`);
+    console.log("There is an altar with a shiny stone with a staff engraved in it.");
+    console.log("The energy of the stone is radiating. It's almost as if it wants to become a part of you. Touch the stone?");
+    let classDecision = READLINE.question("Yes? or No?");
+
+    if(classDecision.toLowerCase == "yes"){
+
+      console.log(`${player.name} touches the stone, a flood of energy enters your body! You feel like you have awakened!`);
+      player.abilities[0] = "Iron Defense"
+      player.haki += 50;
+      consle.log(`${player.name} has transcended to a Tank! You learned Armoring Punch! `${player.name}'s defense rose by 50!');
+
+    }
+
   }
 
 } else {
