@@ -7,9 +7,9 @@ let READLINE = require("readline-sync");
 
 console.log("*** Problem 1: R-rated ***");
 let age= READLINE.question("Enter your age "); // assign a number
-let withAdult = true; // assign a boolean
+let withAdult = READLINE.question("are you with an adult "); // assign a boolean
 
-if (age >= 18 || withAdult ){
+if (age >= 18 || withAdult == 'yes' ){
 
 console.log("Watch movie")
 
@@ -28,8 +28,19 @@ console.log("you need an adult.")
 // with them.
 console.log("*** Problem 2: Umbrella ***");
 let raining = READLINE.question("Is it raining?: "); // assign a boolean
-let thunderstorming = READLINE.question("Is is thunderstorming"); // assign a boolean
 
+if(raining == 'yes'){
+	let thunderstorming = READLINE.question("Is is thunderstorming"); // assign a boolean
+	if (thunderstorming == 'yes') {
+		console.log("stay home; dont bring umbrella");
+	}
+	else{
+		console.log('bring your umbrella b');
+	}
+}
+else{
+	console.log("nah dont bring that umburellaellaella");
+}
 
 
 // **** Problem 3: Monkey Trouble ****
