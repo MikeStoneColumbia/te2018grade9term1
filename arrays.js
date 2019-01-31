@@ -11,7 +11,7 @@ firstLast6([13, 6, 1, 2, 3]) → false
 
 function firstLast6(nums) {
 
-  for(int i = x; i < nums.length;i++){
+  for(let i = 0; i < nums.length;i++){
 
     if(i == 0 || i == nums.length-1 ){
 
