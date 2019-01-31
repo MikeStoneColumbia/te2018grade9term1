@@ -11,6 +11,19 @@ firstLast6([13, 6, 1, 2, 3]) → false
 
 function firstLast6(nums) {
 
+  for(int i = x; i < nums.length;i++){
+
+    if(i == 0 || i == nums.length-1 ){
+
+      if(nums[i] == 6)
+         return true;
+
+    }
+
+  }
+
+  return false;
+
 }
 
 // Remove comment below to test this function.
