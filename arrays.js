@@ -27,7 +27,7 @@ function firstLast6(nums) {
 }
 
 // Remove comment below to test this function.
-//testFirstLast6();
+testFirstLast6();
 
 /******************************************************************************
                                    midThree()
