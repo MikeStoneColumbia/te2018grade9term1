@@ -18,6 +18,19 @@ function firstLast6(nums) {
   }
 
 
+  for(let i = 0; i < nums.length;i++){
+
+    if(i == 0 || i == nums.length-1 ){
+
+      if(nums[i] == 6)
+         return true;
+
+    }
+
+  }
+
+  return false;
+
 }
 
 // Remove comment below to test this function.
