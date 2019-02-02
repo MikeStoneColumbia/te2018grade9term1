@@ -11,10 +11,12 @@ withoutEnd("coding") → "odin"
 
 function withoutEnd(str) {
 
+  return str.substring(1,str.length - 1)
+
 }
 
 // Remove comment below to test this function.
-//testWithoutEnd();
+testWithoutEnd();
 
 /******************************************************************************
                                    frontAgain()
@@ -30,10 +32,24 @@ frontAgain("ed") → true
 
 function frontAgain(str) {
 
+  firstLetter = str.charAt(0)
+  secondLetter = str.charAt(1)
+  secLast = str.charAt(str.length-2)
+  lastLetter = str.charAt(str.length-1)
+
+
+  if(firstLetter == secLast && secondLetter == lastLetter){
+
+    return true;
+
+  }
+
+  return false;
+
 }
 
 // Test this function.
-//testFrontAgain();
+testFrontAgain();
 
 /******************************************************************************
                                    deFront()
@@ -49,10 +65,29 @@ deFront("away") → "aay"
 
 function deFront(str) {
 
+  firstLetter = str.charAt(0)
+  secondLetter = str.charAt(1)
+  newString = '' 
+
+  if(firstLetter == 'a'){
+
+    newString += 'a'
+
+}
+   if(secondLetter == 'b'){
+
+    newString += 'b'
+
+  }
+
+  newString += str.substring(2,str.length)
+
+  return newString
+
 }
 
 // Test this function.
-//testDeFront();
+testDeFront();
 
 /******************************************************************************
                                    without2()

@@ -15,28 +15,65 @@ console.log(sayHello("Luis"));
 // Write a function expression that returns the quotient of the first argument
 // divided by the second.
 
+let division = function(num1,num2){
+
+console.log(num1/num2);
+return num1/num2
+
+}
 
 // Test your function at least three times below
 console.log("Problem 1 Tests:");
 
+division(10,5);
 
 // **** Problem 2: sumDouble() ****
 // Write a function expression that, when given two number values, return their
 // sum. Unless the two values are the same, then return double their sum.
 
+let addition =function(num1,num2){
+
+	if(num1 == num2){
+
+		return num1 * 2;
+
+	}else{
+
+		return num1 + num2;
+
+	}
+
+}
 
 // Test your function at least three times below
 console.log("Problem 2 Tests:");
 
+console.log(addition(2,2));
+console.log(addition(2,3));
 
 // **** Problem 3: makes10() ****
 // Write a function expression that, when govem 2 numbers, a and b, returns true
 // if one if them is 10 or if their sum is 10.
 
+let magicTen = function(num1,num2){
+
+	if(num1 == 10 || num1 + num2 == 10){
+
+		return true;
+
+	}else{
+
+		return false;
+
+	}
+
+}
 
 // Test your function at least three times below
 console.log("Problem 3 Tests:");
 
+console.log(magicTen(10,0));
+console.log(magicTen(5,2));
 
 // **** Problem 4: Object Methods ****
 // Write code that represents any object you like. Your object should have at

@@ -9,9 +9,21 @@ sumDouble(3, 2) → 5
 sumDouble(2, 2) → 8
 *******************************************************************************/
 
-function sumDouble(a, b) {
+function sumDouble(num1,num2){
+
+  if(num1 == num2){
+
+    return (num1 + num2) * 2
+
+  }else{
+
+    return num1 + num2
+
+  }
 
 }
+
+
 
 // Remove comment below to test this function.
 //testSumDouble();
@@ -19,19 +31,39 @@ function sumDouble(a, b) {
 /******************************************************************************
                                    makes10
 Instructions:
-Given 2 numbers, a and b, return true if one if them is 10 or if their sum is 10.
+Given 2 numbers, a and b, return true if one of them is 10 or if their sum is 10.
 Examples:
 makes10(9, 10) → true
 makes10(9, 9) → false
 makes10(1, 9) → true
 *******************************************************************************/
 
-function makes10(a, b) {
+function makes10(a,b){
+
+  if(a +b == 10){
+
+    return true;
+
+  }
+
+  else if(a == 10 || b == 10){
+
+    return true;
+
+  }else{
+
+    return false;
+
+  }
 
 }
 
+console.log(makes10(2,8))
+
 // Remove comment below to test this function.
 //testMakes10();
+
+
 
 /******************************************************************************
                                    parrotTrouble
@@ -48,10 +80,19 @@ parrotTrouble(false, 6) → false
 
 function parrotTrouble(talking, hour) {
 
+  if(talking && (hour > 20 || hour < 7)){
+
+    return true;
+
+  }
+
+  return false;
+
+
 }
 
 // Remove comment below to test this function.
-//testParrotTrouble();
+testParrotTrouble();
 
 /******************************************************************************
                                    alarmClock
@@ -69,10 +110,36 @@ alarmClock(0, false) → "10:00"
 
 function alarmClock(day, vacation) {
 
+  if(day >= 1 && day <= 5){
+
+    if(vacation){
+
+      return "10:00"
+
+    }else{
+
+      return "7:00"
+
+    }
+
+  }else{
+
+    if(vacation){
+
+      return "off"
+
+    }else{
+
+      return "10:00"
+
+    }
+
+  }
+
 }
 
 // Remove comment below to test this function.
-//testAlarmClock();
+testAlarmClock();
 
 /******************************************************************************
                                    caughtSpeeding
@@ -91,10 +158,32 @@ caughtSpeeding(65, true) → 0
 
 function caughtSpeeding(speed, isBirthday) {
 
+  bdayFactor = 0
+
+  if(isBirthday){
+
+    bdayFactor = 5
+
+  }
+
+  if(speed <= 60 + bdayFactor){
+
+    return 0;
+
+  }else if(speed >= (61+bdayFactor) && speed <= (80+bdayFactor)){
+
+    return 1
+
+  }else{
+
+    return 2
+
+  }
+
 }
 
 // Remove comment below to test this function.
-//testCaughtSpeeding();
+testCaughtSpeeding();
 
 /****************************************************************************
                                     Tests
